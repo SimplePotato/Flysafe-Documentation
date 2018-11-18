@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FlySafe documentation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!--container-->
+    <div class="container">
+    
+    <!--go on top sticky button on mobile-->
+    <button onclick="topFunction()" id="UpBtn" title="Go to top">Top</button>
+    
+    
+    <!--navbar-->
+    <div class="nav">
+    <nav id="navbar">
+      <header>Flysafe Docs</header>
+      <img id="logo" src="img/flysafe-icon.png" alt="flysafe app logo">
+<br>
+      <div id="nav-links">
+        <div id="nav_col_one">
+        <a class="nav-link" href="#Getting_started" rel="internal"><li>  Getting started</li></a>
+        <a class="nav-link" href="#Paragliding_map" rel="internal"><li>  Paragliding map</li></a>
+        <a class="nav-link" href="#Flight_list" rel="internal"><li>  Flight list</li></a>
+        <a class="nav-link" href="#Upload_IGC/GPX" rel="internal"><li>  Upload IGC/GPX</li></a>
+        <a class="nav-link" href="#Chat" rel="internal"><li>  Chat</li></a>
+        </div>
+        <div id="nav_col_two">
+        <a class="nav-link" href="#Friends" rel="internal"><li>  Friends</li></a>
+        <a class="nav-link" href="#Location_sharing" rel="internal"><li>  Location sharing</li></a>
+        <a class="nav-link" href="#Notifications" rel="internal"><li>  Notifications</li></a>
+        <a class="nav-link" href="#Settings" rel="internal"><li>  Settings</li></a>
+        <a class="nav-link" href="#About" rel="internal"><li>  About</li></a>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <!--END navbar-->
+    
+    <!--main-->
+    <main id="main-doc">
+      <!--getting started-->
+      <section class="main-section" id="Getting_started">
+        <header ><h3>Getting started</h3></header>
+        <article>
+          <p><strong>Please <code class="note">NOTE!</code> that FlySafe is not a flight recorder. Maybe we will build in such function in the future.</strong></p>
+          <p>If you reading this I assume you already have FlySafe  app installed. Otherwise, you can grab it on <a href="https://play.google.com/store/apps/details?id=com.xcglobe.xcglobesites" rev="external" target="_blank">Google play store</a>.
+            To create your profile you have to sign in first. You can sign in with Google (recommended) or you can create a new account on FlySafe.</p>
+          <p>
+            <em>To read more about how sign in with google works, follow this link on <a href="https://www.howtogeek.com/53275/exchanging-data-safely-with-oauth/" rev="external" target="_blank">HowToGeek article.</a></em>
+          </p>
+          <br>
+          <p>
+            After you successfully sign select a menu by clicking a hamburger icon in a top left corner or simply swipe from left edge to right.
+            Now you can see your profile picture (a robot or a flag by default) and other menu selections which we'll describe in the next sections.</p>
+          <p>
+            By clicking on your profile picture you entered your personal statistic page where you can check your flights by seasons, check how many hours your glider has flown, or edit your profile by clicking 3 dot icon in the top right corner.
+          </p>
+        </article>
+      </section>
+      <!--END getting started-->
+      
+      <!--paragliding map-->
+      <section class="main-section" id="Paragliding_map">
+        <header ><h3>Paragliding map</h3></header>
+        <article>
+          <p>
+            A map has 4 different types of information which you can set parameters by selecting a gear icon at the top right corner.
+          </p>
+          <ol>
+            <li><p><strong>Paragliding sites:</strong>
+              The site is shown on a map after at least one flight have been made and uploaded to the server. (Sometimes new sites take a bit longer than an instant to appear on the map and the reasons differ so be patient.)
+              You can choose how many spots are visible by choosing minimum flights in settings <code>lower value = slower loading & higher value = faster loading</code>
+              When clicking on a dot and then clicking again on a name of takeoff you can open sub-menu where you see all publicly visible flights from this take-off site. There is also a hiker icon when selected, shows hike paths to the takeoff site recorded by different people (Not all sites have hike paths so we highly encourage everyone to participate in hiking and then upload their hike tracks to flysafe so the others won't get lost) You can easily follow these hiking tracks by firsly position yourself on the map by clicking crosshairs icon on the upper right corner of the map and then simply follow the trail.
+              <code class="note">NOTE!</code> that your hike should end in radius of 100m of the takeoff site to be shown in hike track for this site.
+              </p>
+
+              <p><strong>Colors of dots:</strong></p>
+              <ul class="site_dots">
+                <li><p><svg height="10" width="10">
+                  <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="Azure" />
+                </svg> White = a site that has at least one uploaded flight.</p></li>
+                <li><p><svg height="10" width="10">
+                  <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="red" />
+                </svg> Red = popular site (You can set the parameter how many takeoffs site should have to be popular by setting the value of "Flights for popular sites"</p></li>
+                <li><p><svg height="10" width="10">
+                  <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="green" />
+                </svg> Green = Sites you already take off from.</p></li>
+                <li><p><svg height="10" width="10">
+                  <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="CornflowerBlue"/>
+                </svg> Blue = Your favorite site (You have to favorite it first by clicking on a heart icon after clicking on a dot. By doing so, you'll be notified of every new flight others make from that site)</p></li>
+              </ul>
+            </li>
+            <li><p><strong>Current wind data:</strong> Arrow indicates the speed and direction of the wind. it represents 10 minute average live weather stations data and when we select it, it shows us wind data and if we click on it again you are redirected to a graphical data representation of this weather station. <code class="note">NOTE!</code> That wind data is not covered in many countries due to lack of publicly available station data. If you have a live wind station and you are willing to share station data with us, please contact us so we can show this data to others.</p></li>
+            
+            <li><p><strong>Airspace:</strong> Is currently available only for following countries</p>
+            <div id="airspace_countries">
+              <div>
+            <ul id="airspace_countries_col1">
+              <li>Australia</li>
+              <li>Austria</li>
+              <li>Belgium-Luxemburg</li>
+              <li>Brazil</li>
+              <li>Bulgaria</li>
+              <li>Canada</li>
+              <li>Chile</li>
+              <li>Colombia</li>
+              <li>Croatia</li>
+              <li>Czech Republic</li>
+              <li>Denmark</li>
+              <li>Estonia</li>
+              <li>Finland</li>
+              <li>France</li>
+              <li>Germany</li>
+              <li>Greece</li>
+              <li>Hungary</li>
+              <li>Iceland</li>
+              <li>Ireland</li>
+              <li>Israel</li>
+              <li>Italy</li>
+              <li>Latvia</li>
+            </ul>
+            </div>
+            
+            <div>
+            <ul id="airspace_countries_col2">
+              <li>Lithuania</li>
+              <li>Macedonia</li>
+              <li>Netherlands</li>
+              <li>Nepal</li>
+              <li>New Zeland</li>
+              <li>Norway</li>
+              <li>Poland</li>
+              <li>Portugal</li>
+              <li>Republic of South Africa</li>
+              <li>Romania</li>
+              <li>Russia</li>
+              <li>Serbia</li>
+              <li>Slovakia</li>
+              <li>Slovenia</li>
+              <li>Spain</li>
+              <li>Sweden</li>
+              <li>Switzerland</li>
+              <li>Ukraine</li>
+              <li>United Kingdom</li>
+              <li>United States</li>
+              <li>Vietnam</li>
+            </ul>
+            </div>
+            </div>
+            </li>
+          
+            <p>By clicking on an empty space of available airspace field, a popup window appears with additional information about that airspace.</p>
+            
+            <li><p><strong>Live tracking:</strong> Pilots who are sharing their location via mobile apps like FlyMe and XcTrack are shown on the map also. By clicking on a paraglider you get his track as a red path line, date and hour of latest position update, Hight (ASL) and speed.
+                <code class="note">NOTE!</code> That paragliders shown on the paragliding map are only those who are sharing their location publicly via third-party applications.
+                To locate your friend that is sharing his location with you, go to <a href="#Location_sharing" rel="internal">Location sharing menu.</a></p></li>
+          </ol>
+          </p>
+        </article>
+      </section>
+      <!--END paragliding map-->
+      
+      <!--flight list-->
+      <section class="main-section" id="Flight_list">
+        <header ><h3>Flight list</h3></header>
+        <article>
+          <p>In Flight list menu you can see the latest flights that are uploaded across different sites. Your friend's flights have a yellowish background and your flights have a purple background.</p>
+
+            <p>You can choose to show only local pilots, only friends or only flights in my country by clicking on the filter icon next to the 3 dot icon.</p>
+            
+            <p>3 dot icon in top right corner contains an option to choose a certain date, to view latest liked flights (those likes you give to others), to view latest comment flights (comments you commented) and to view only latest friend flights.</p>
+            
+            <p>By clicking on a profile photo of someone you open their profile page. And if you click on a mini-map, the flight track opens in a bigger window where you can like or comment on buddies flight. Here you can also download IGC and KML file of someone's track and analyze/view it in 3rd party applications like Google Earth. To enjoy an awesome 3D view of flight tracks please install GoogleEarth for Android from <a href="https://play.google.com/store/apps/details?id=com.google.earth"  target="_blank" rel="external">Google play store</a>
+            
+          </p>
+        </article>
+      </section>
+      <!--END flight list-->
+      
+      <!--upload IGC/GPX-->
+      <section class="main-section" id="Upload_IGC/GPX">
+        <header ><h3>Upload IGC/GPX</h3></header>
+        <article>
+          <p>FlySafe app finds flight logs or hike logs on your device and upload them to FlySafe server. By default paths to IGC/GPX files are already set for FlyMe, XcTrack, Naviter OudieLive and xcSoar.
+            If you're using any other flight logger app or track recorder app you can set the path to logs by clicking on a map icon with a plus sign on it.</p>
+            
+            <p>If you select gear icon in the upper right corner you can set your default uploading settings.
+              <ol> 
+                <li>Privacy:
+                  <ul>
+                    <li>Public</li>
+                    <li>Private</li>
+                    <li>Unlisted</li>
+                    <li>Friends</li>
+                  </ul>
+                </li>
+                <li>Glider type</li>
+                <li>Glider model</li>
+                <li>Possibility to upload every newly recorder track automatically. You can allow the FlySafe app to automatically upload any newly stored flight or hike log)</li>
+              </ol>
+            </p>
+            
+            <p>For manual uploading you have to click on a track you wish to upload. The default settings are shown but you can change them as you wish. For those who have multiple gliders, you can easily select your glider you have flown by clicking on the clock icon on the right side of the Glider model input field.
+            You can write a flight note or preview track on a map before uploading just to be sure you are uploading the right file.</p>
+            
+            <p>You can upload all files at once by clicking a purple icon on the bottom right corner.</p>
+            <ul>
+              <li>Files that are not yet uploaded have a white background.</li>
+              <li>Those who are successfully uploaded have a green background.</li>
+              <li>Flights that overlap (duplicates) are orange.</li>
+              <li>And if something goes wrong the background is red.</li>
+            <ul>
+        </article>
+      </section>
+      <!--END upload IGC/GPX-->
+      
+      <!--chat-->
+      <section class="main-section" id="Chat">
+        <header ><h3>Chat</h3></header>
+        <article>
+          <p>Flysafe app also has its own inbuilt chat. By default, you already have one chat group with your national flag. In this group are all the pilots which are flying under this flag. <em>Some nations have a lot of pilots and it would be inappropriate to chat about everyday stuff in this nationwide groups</em>. That's why you have an option to create your own group. And by doing so, select <strong>"new conversation"</strong>,  then check <strong>"make a new group conversation"</strong>, when you select at least two users, a button <strong>"new group"</strong> appears. Click it when done selecting members. Now you see an empty chat with the title of (names of all members in this group) You can change this title for better visibility and sorting. You can also add members later.</p>
+          <p>Now if you type something in, all members you select will receive this message if they have Flysafe app installed. You can also share your location with everyone in this group. If some group is too chatty you can mute it with the bell icon.
+          To remove some chat from the main screen you can archive it and will be hidden and can be viewed in <strong>"show archived"</strong> menu.</p>
+          <p>If you want to chat with only one person just select "New conversation" and select a person you wish to chat with.</p>
+          <p>To disable or enable notifications in chat you have to go to <a href="#Settings">Settings</a> menu > Notification. </p>
+          <p><code class="note">NOTE!</code> if you <strong>create a group</strong> but close this group before typing something in, You'll lose this group and you will have to repeat the process again. This document was written when flysafe V2.14.1 was released. The Chat still needs improvements on UX and scalability so please be patient if any changes appears. And do not hesitate to ask a question in Help chat or in Help/About menu click Ask a question</p>
+        </article>
+      </section>
+      <!--END chat-->
+      
+      <!--friends-->
+      <section class="main-section" id="Friends">
+        <header ><h3>Friends</h3></header>
+        <article>
+          <p>In Friends menu, you can select your friends or people you wish to share your location with or to be notified about their latest flights.</p>
+          <p>To add a person in a friends list, click the icon "person with a plus sign" and then find a friend by entering his name in search field > click on desired friend so the cloud changes its color to black and now should  that person appear in your friends list <em>(To remove  a friend you select it in your friend menu and click the button "Remove friend")</em></p>
+          <p>When clicking on a friend in your friends list you can control if this person can request your location or not. And to enable/disable notifications for this friend latest flights.</p>
+          <p>The SMS code is for someone who doesn't have an android phone or don't have flysafe installed on their phone. 
+              <em>Example: If your wife has an iPhone, you click a share icon on the right and use the desired application for sharing to share this code with your wife. Now when she wants to check your location, she sends this unique code (that looks like <code>#FlySafe 1234 abcdef12345 GPS</code>) to your phone via SMS and she gets back automatic SMS with some data and a link to open Google maps to visually see your position.</em></p>
+          <p>By click on 3 dot icon in top right corner you have an option to share your location with everyone in your friends list or to disable your location sharing for all.</p>
+        </article>
+      </section>
+      <!--END friends-->
+      
+      <!--location sharing-->
+      <section class="main-section" id="Location_sharing">
+        <header ><h3>Location sharing</h3></header>
+        <article>
+          <p>Here is a list of people that have shared their location with you. You can also see how far away from your position they are. If you click on one of them you can view this person location, you can request his location over SMS as well if the data signal is very week and it's even possible to activate their GPS over SMS you send by click on "Send SMS to activate GPS" This option is very useful in emergency situations when person doesn't respond back for a while and their GPS is set on OFF. But <code class="note">NOTE!</code> To get persons location by SMS you still need some signal on their phone even if it's very week this option should work.</p>
+          <p style="background-color:rgba(223, 37, 37, 0.171)"><em>Please use SMS option only if there is no other option. So you don't necessarily drain pilots battery or because in some countries you could create additional cost to another person bill. How much the SMS cost in different corners of our world you should contact your mobile provider. But you have an option to restrict SMS sending in</em> <code><a href="#Settings">Settings</a> > Location settings</code></p>
+          <p>You can also select only 3 or 6 people to view them on the map. Or simply show all off them. But <code class="note">NOTE!</code> When you request person location, the person that their location is requested is notified that you request their location. <strong>So no one can view where you are without you being notified</strong>. If any of the persons you share location with is abusing this option you can easily stop sharing location with them. in <a href="#Friends">Friends</a> menu.</p>
+          <p>Of course, you can also set some specific setting about your location sharing in <a href="#Settings">Settings</a> menu in submenu "Location settings".</p>
+        </article>
+      </section>
+      <!--END location sharing-->
+      
+      <!--notifications-->
+      <section class="main-section" id="Notifications">
+        <header ><h3>Notifications</h3></header>
+        <article>
+          <p>Here are all the notifications that you receive on your phone about your friends flights, flights from your favourite site and so on. This is useful when we accidentally clear notifications on our phone.</p>
+          <p>To set on what you want to be notified in notification please visit the <a href="#Settings">Settings</a> menu and select submenu "Notifications"</p>
+        </article>
+      </section>
+      <!--END notifications-->
+      
+      <!--settings-->
+      <section class="main-section" id="Settings">
+        <header ><h3>Settings</h3></header>
+        <article>
+          <ol id=settings_menu_options>
+            <li><strong>Notifications:</strong></li>
+              <ul>
+                <li>Enable notifications <em>(Turn on/off notifications of any kind)</em></li>
+                <li>Private message <em>(When someone sends you a private message in chat)</em></li>
+                <li>Requested your location <em>(If set to OFF you won't be notified if someone has requested your location)</em></li>
+                <li>Friends location update <em>(By default is set to OFF and if you set to ON you'll be notified about every new position of your friends. This option is useful in search actions when the position of a missing person is not so clear and you are waiting for a new position notification.)</em></li>
+                <li>New flights from friends <em>(If your friend publish his flight you'll be notified but not if he publish it privately)</em></li>
+                <li>New flights from a favorite site <em>(To select your favourite sites, visit <a href="#Paragliding_map">Paragliding map</a> menu)</em></li>
+                <li>New like notifications <em>(Notification if someone likes your flight)</em></li>
+                <li>Comment reply notifications <em>(If you commented on someone elses flight you'll be notified about new comments on this flight. Quite useful to continue conversations under certain flights)</em></li>
+                <li>New message notifications <em>(Notifications about new messages in chat)</em></li>
+                <li>New flight note <em>(When a friend add new or change a flight note you can be notified)</em></li>
+                <li>Comments on liked flights <em>(Notification if someone comments on flights you liked)</em></li>
+                <li>Vibrate</li>
+                <li>Ringtone <em>(You can select different Ringtone for flysafe notifications)</em></li>
+                <li>SFFA notifications <em>(Notifications from Slovenian Free Flight Association regarding NOTAM or other activities)</em></li>
+              </ul>
+              <br>
+            <li><strong>Location settings:</strong></li>
+              <ul>
+                <li>Only GPS location of a friend <em>(When viewing friend's location show only GPS, not WiFi or Cellular network location)</em></li>
+                <li>Enable location sharing <em>(Allow chosen friends to request your location. If device is turned off they get last known location)</em></li>
+                <li>Last known location <em>(Allow chosen friends to see your last known location. The last known location is always stored on server.)</em></li>
+                <li>Allow SMS location <em>(Allow sending location to friends via SMS)</em></li>
+                <li>Allow sending SMS when roaming <em>(Allow sending SMS when roaming)</em></li>
+              </ul>
+              <br>
+            <li>Daily flight settings:</li>
+              <ul>
+                <li>Only local pilots <em>(In Flight menu you'll see only flights from pilots from your country)</em></li>
+                <li>My Country only <em>(In Flight list menu only show flights in your country)</em></li>
+                <li>Friends only <em>(Only flights from your friends will be shown in Flight list menu)</em></li>
+              </ul>
+              <br>
+            <li>Upload settings:</li>
+              <ul>
+                <li>Glider model <em>(Set glider name that will be shown by default - You can still change it manually when publishing the flight)</em></li>
+                <li>Upload new IGC/GPX files automatically <em>(This will automaticly upload new files when they are created)</em></li>
+                <li>Privacy <em>(Set default privacy of your uploaded files)</em></li>
+                <li>Glider type <em>(Set default glider)</em></li>
+          </ol>
+        </article>
+      </section>
+      <!--END settings-->
+      
+      <!--about-->
+      <section class="main-section" id="About">
+        <header ><h3>About</h3></header>
+        <article>
+            <p><em>FlySafe is a hobby project intended for free-flying enthusiasts. It is a mobile and web application for flight logging and location sharing between pilots.</em></p>
+
+            <h4>Privacy policy</h4>
+            
+            <h5>What data is being collected?</h5>
+              <p>The most common piece of information on FlySafe is location. This may be public (location point from your public flight logs) or private (your last known location when using FlySafe's friend location feature). On top of that we store your e-mail address for logging in the system and optionally your phone number, gender and country if you enter this information in your profile.</p>
+            
+            <h5>Who is collecting the data?</h5>
+              <p>We, the developers of FlySafe get data from you and we store it on a single server. No third party has access direct access to the data or server. We gather some of the publicly available information (like flights and user names) from other Online Contests (OLC).</p>
+            
+            <h5>How is the data being collected?</h5>
+              <p>When you log in to FlySafe you enter your e-mail as your username (or choose a Google account e-mail). If you log in to the mobile app, the app asks you for your country, gender and phone number - you choose to enter this manually or skip it. One of the most important and useful features of FlySafe is an "always on" location sharing between friends. If you have any friends that you share your location with them, then the mobile app periodically sends your last known location (about once per hour). Your location data stored on the server is encrypted with a public key for each of your friends that your share your location with, generated by the app and can only be decrypted with your friend's private key. This means that even though the last known location is stored on a central server, it can't be viewed by anyone else other than the people you allow.</p>
+            
+            <h5>Will the data be shared with any third parties?</h5>
+              <p>We do not forward your data to a third party unless you choose to use a feature that shares any of your private data with other people. This means that when you share your location with the people you choose, we forward your last known location to these users. Any of the public data (public flights and user profiles) may be accessed and collected by a third party - like search engines and website archivers.</p>
+            
+            <h5>How will the information be used?</h5>
+              <ul>
+                <li><strong>E-mail:</strong> is used for logging in the system. We don't send newsletters. You will only get an e-mail from us if you forget your password.</li>
+                
+                <li><strong>Country:</strong> is used for filtering daily flights and text localization.</li>
+                
+                <li><strong>Gender:</strong> is used for generating personalized notifications with gender-specific text.</li>
+                
+                <li><strong>Phone number:</strong> is used for emergency SMS location sharing. Works only if you have SMS location sharing enabled in the app and only with the people you choose.</li>
+              </ul>
+              
+              <p><strong>For example:</strong> Your friend on FlySafe doesn't have your phone number, but you have shared your location with him/her. Your friend can then get your phone number from FlySafe and send you an SMS from the app, that looks like this:</p>
+              <code>#FlySafe 1234 abcdef12345 GPS</code> 
+              <p>On your end when the FlySafe app receives this message it will automatically reply with your coordinates.</p>
+            
+            <h5>How long will the data be stored for?</h5>
+              <p>Your account info (e-mail address and your flights) are stored until they are deleted by you or us, and your last known location expires in a month. You can edit or delete your flights, country and phone number any time in your profile.<p>
+            
+            <h5>What rights does the data subject have?</h5>
+              <p>You are in control of your data. You can edit or delete any information on your profile, however to permanetely delete your account you need to reach us by e-mail.<p>
+            
+            <ul>
+              <li><strong>To delete your last known location data:</strong> Select from the mobile app menu: Location sharing > menu > delete my last known location.</li>
+              <li><strong>To delete your phone number:</strong> Edit your profile in the app and save your profile with an empty phone number.</li>
+              <li><strong>To delete your flights:</strong> Click on edit flight, then choose delete and save.</li>
+            </ul>
+            
+            <h5>How can the data subject raise a complaint?</h5>
+              <p>If you have any questions or wish to permanetely delete your account, send us an e-mail at <code>[flysaf(at)klv.si]</code></p>
+        </article>
+      </section>
+      <!--END about-->
+    </main>
+    <!--END main-->
+  </div>
+  <!--END container-->
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>

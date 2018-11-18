@@ -1,0 +1,176 @@
+/*background*/
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: -20px 0px;
+}
+
+/*container*/
+.container{
+background-color: rgb(234, 255, 242);
+padding:20px;
+}
+
+#UpBtn{
+  display: none;
+}
+
+/*logo*/
+#logo{
+  height: 50px;
+  width: 50px; 
+  position: relative;
+  margin-left: 80px;
+  padding-top: 5px;
+}
+
+/*navbar*/
+#navbar{
+height: 100%;
+width: 222px;
+position: fixed;
+z-index: 1;
+top: 0;
+left:0;
+background-color:#27253d;
+overflow-x: hidden;
+padding-top:20px;
+}
+/*navbar header*/
+#navbar header{
+  font-size: 30px;
+  color: #b2e4e4;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  margin-top:-20px;
+}
+
+
+/*nav-link*/
+.nav-link{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-weight: 300;
+  list-style: none;
+  font-size:25px;
+  color: #f5f5c6;
+  display: block;
+}
+
+.nav-link:hover {
+  color:#f3f356;
+  font-weight: 600;
+}
+
+/*main*/
+#main-doc {
+  margin-left:222px;
+  padding: 0px 10px;
+}
+
+#main-doc a {
+  color: rgb(109, 9, 240);
+  text-decoration-line: none;
+}
+
+#main-doc a:hover {
+  color:#d208fa;
+}
+
+
+
+#airspace_countries {
+  display:grid;
+  grid-template-columns: 3fr 3fr;
+}
+
+
+code{
+  background-color: #b2e4e4;
+  font-size:18px;
+}
+
+.note {
+  background-color: rgba(223, 37, 37, 0.582);
+  /*font-weight: bold;*/
+}
+
+
+/*site_dots_colors*/
+.site_dots {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+#settings_menu_options{
+  line-height: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  /*main MOBILE*/
+#main-doc{
+  display:block;
+  position: absolute;
+  margin:auto;
+  margin-top:140px;
+} 
+
+/*navbar MOBILE*/
+#navbar {
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      margin-top:-20px;
+      width:100%;
+      max-height:140px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+      text-align: center;
+}
+
+#nav-links{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  line-height: 10px;
+}
+
+#navbar a li {
+  font-size: 15px;
+  
+}
+
+#navbar header{
+  display: none;
+}
+
+#logo {
+  display:none;
+}
+
+/*back to top button*/
+#UpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(9, 76, 221, 0.699);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#UpBtn:hover {
+  background-color: rgb(87, 105, 6);
+}
+
+}
